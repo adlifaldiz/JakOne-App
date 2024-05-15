@@ -101,7 +101,7 @@ class HomeView extends GetView<HomeController> {
                             10,
                             (index) => Image.asset(
                               ebanner,
-                              height: 120,
+                              height: 110,
                             ),
                           ),
                         ),
