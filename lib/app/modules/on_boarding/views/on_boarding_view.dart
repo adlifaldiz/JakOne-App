@@ -35,8 +35,8 @@ class OnBoardingView extends GetView<OnBoardingController> {
                         child: Wrap(
                           spacing: 16,
                           children: [
-                            Image.asset(flagEng, height: 24),
                             Image.asset(flagId, height: 24),
+                            Image.asset(flagEng, height: 24),
                           ],
                         ),
                       ),
