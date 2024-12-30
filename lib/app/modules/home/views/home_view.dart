@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bounceable/flutter_bounceable.dart';
 
 import 'package:get/get.dart';
@@ -10,6 +9,7 @@ import 'package:jakone_app/app/modules/home/views/events.dart';
 import 'package:jakone_app/app/modules/home/views/menus.dart';
 import 'package:jakone_app/app/modules/home/views/places.dart';
 import 'package:jakone_app/app/theme/color_schemes.dart';
+import 'package:jakone_app/app/theme/theme_service.dart';
 import 'package:jakone_app/app/widget/custom_icon_button.dart';
 
 import '../controllers/home_controller.dart';
@@ -129,7 +129,9 @@ class HomeView extends GetView<HomeController> {
         ],
       ),
       floatingActionButton: Bounceable(
-        onTap: () {},
+        onTap: () {
+          ThemeService().switchTheme();
+        },
         child: Container(
           height: 80,
           width: 80,
